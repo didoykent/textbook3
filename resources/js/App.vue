@@ -7,7 +7,7 @@
     <div v-if="$route.name === 'freetalking_beginner'">
         <v-layout>
 
-            <v-navigation-drawer v-model="drawer" :mini-variant="mini" absolute style="background-color:#5C8D89;   " >
+            <v-navigation-drawer v-model="drawer" :mini-variant="mini" fixed  style="background-color:#5C8D89;  overflow-y: hidden; " >
 
                 <v-list class="pa-1">
                     <v-list-tile avatar>
@@ -16,7 +16,7 @@
                         </v-list-tile-avatar>
 
                         <v-list-tile-content>
-                            <v-list-tile-title>Free Talking Step 11</v-list-tile-title>
+                            <v-list-tile-title>Free Talking Step 1</v-list-tile-title>
                         </v-list-tile-content>
 
 
@@ -78,7 +78,7 @@
         <v-layout>
 
 
-            <v-navigation-drawer v-model="drawer" :mini-variant="mini" absolute style="background-color:#c38b8b; " >
+            <v-navigation-drawer v-model="drawer" :mini-variant="mini" fixed style="background-color:#c38b8b; overflow-y:hidden; " >
 
 
                 <v-list class="pa-1">
@@ -164,6 +164,8 @@
 </template>
 
 <script>
+
+
 export default {
 
 
@@ -214,7 +216,7 @@ export default {
 
 }
 </script>
-
+import 'babel-polyfill'
 <style>
 .custom-list {
     max-height: 90vh;

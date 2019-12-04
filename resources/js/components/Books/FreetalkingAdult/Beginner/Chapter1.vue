@@ -732,6 +732,7 @@ Introduce yourself this time!
 </template>
 
 <script>
+import 'babel-polyfill'
 export default {
 
   props: ['fontSize'],
